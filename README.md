@@ -5,40 +5,21 @@ Web servers are an essential part of any web-based application or site, serving 
 
 
 
-## Definition of Web Server Configuration and Maintenance 📚 
-
+## Definition of Web Server Configuration and Maintenance 📚
 
 Web server configuration refers to the process of setting up and customizing the web server software to suit the needs of a specific application or site. This includes:
 
-
-
-
-1. 
-2. **Installing and configuring the web server software: **This involves selecting the appropriate web server software (e.g., Apache, Nginx, Microsoft IIS), installing it on the server machine, and configuring the basic settings.
-3. 
-4. **Setting up virtual hosts: **Virtual hosts allow a single server to host multiple sites or applications, each with its own configuration and domain name.
-5. 
-6. **Configuring security settings: **Implementing security measures such as SSL/TLS certificates, firewalls, and access controls is crucial to protect the server and the data it serves.
-7. 
-8. **Optimizing performance: **Fine-tuning the web server configuration for optimal performance, such as configuring caching, compression, and load balancing, can significantly improve the user experience.
-9. 
-
-
+1. **Installing and configuring the web server software: **This involves selecting the appropriate web server software (e.g., Apache, Nginx, Microsoft IIS), installing it on the server machine, and configuring the basic settings.
+2. **Setting up virtual hosts: **Virtual hosts allow a single server to host multiple sites or applications, each with its own configuration and domain name.
+3. **Configuring security settings: **Implementing security measures such as SSL/TLS certificates, firewalls, and access controls is crucial to protect the server and the data it serves.
+4. **Optimizing performance: **Fine-tuning the web server configuration for optimal performance, such as configuring caching, compression, and load balancing, can significantly improve the user experience.
 
 Web server maintenance involves regularly checking and updating the web server configuration and software to ensure smooth operation and address any issues that may arise. This includes:
 
-
-
-
-1. 
-2. **Monitoring server resources: **Keeping an eye on server resource usage (CPU, memory, disk space, network bandwidth) helps identify potential bottlenecks and prevent performance degradation.
-3. 
-4. **Updating software and packages: **Regularly updating the web server software, operating system, and other packages helps maintain security and stability.
-5. 
-6. **Backing up configurations and data: **Regularly backing up the web server configuration and data is essential for disaster recovery.
-7. 
-8. **Troubleshooting and resolving issues: **Addressing any issues that may arise, such as error messages, slow performance, or security breaches, is crucial for maintaining a reliable web server.
-9. 
+1. **Monitoring server resources: **Keeping an eye on server resource usage (CPU, memory, disk space, network bandwidth) helps identify potential bottlenecks and prevent performance degradation.
+2. **Updating software and packages: **Regularly updating the web server software, operating system, and other packages helps maintain security and stability.
+3. **Backing up configurations and data: **Regularly backing up the web server configuration and data is essential for disaster recovery.
+4. **Troubleshooting and resolving issues: **Addressing any issues that may arise, such as error messages, slow performance, or security breaches, is crucial for maintaining a reliable web server.
 
 
 
@@ -51,17 +32,12 @@ Efficient web server configuration and maintenance are critical for several reas
 
 
 
-1. 
-2. **Performance: **Properly configured and maintained web servers can handle more requests, serve content faster, and provide a better user experience.
-3. 
-4. **Security: **Regularly updating and monitoring web servers helps protect them from security threats such as hacking, malware, and data breaches.
-5. 
-6. **Reliability: **Regular maintenance and monitoring help prevent downtime and ensure that the web server is always available when needed.
-7. 
-8. **Cost-effectiveness: **Efficiently configured and maintained web servers can reduce hardware, bandwidth, and energy costs by handling more requests with fewer resources.
-9. 
-10. **Scalability: **Proper configuration and maintenance enable web servers to handle increased traffic and grow with the application or site.
-11. 
+1. **Performance: **Properly configured and maintained web servers can handle more requests, serve content faster, and provide a better user experience.
+2. **Security: **Regularly updating and monitoring web servers helps protect them from security threats such as hacking, malware, and data breaches.
+3. **Reliability: **Regular maintenance and monitoring help prevent downtime and ensure that the web server is always available when needed.
+4. **Cost-effectiveness: **Efficiently configured and maintained web servers can reduce hardware, bandwidth, and energy costs by handling more requests with fewer resources.
+5. **Scalability: **Proper configuration and maintenance enable web servers to handle increased traffic and grow with the application or site.
+
 
 
 
@@ -457,7 +433,7 @@ Here is a detailed tutorial for setting up NGINX as a web server to serve an app
    index index.html index.htm;
    ```
 
-4. Add a `location` block to handle PHP file requests[1]:
+4. Add a `location` block to handle PHP file requests:
    ```
    location ~ \.php$ {
        include snippets/fastcgi-php.conf;
@@ -501,14 +477,7 @@ Here is a detailed tutorial for setting up NGINX as a web server to serve an app
    - Try accessing the `info.php` file to see it's not working
    - Start PHP-FPM: `sudo systemctl start php7.4-fpm`
 
-This covers the key aspects of installing, configuring, deploying an app, and troubleshooting common issues with NGINX as a web server[1][2][3][4]. Students can follow along, make the prescribed errors, and fix them to reinforce learning.
-
-Citations:
-[1] http://nginx.org/en/docs/beginners_guide.html
-[2] https://www.f5.com/company/blog/nginx/setting-up-nginx
-[3] https://www.codementor.io/php/tutorial/how-to-use-nginx-with-web-application
-[4] https://docs.nginx.com/nginx/admin-guide/web-server/web-server/
-[5] https://www.youtube.com/watch?v=1ndlRiaYiWQ
+This covers the key aspects of installing, configuring, deploying an app, and troubleshooting common issues with NGINX as a web server.
 
 - - -
 

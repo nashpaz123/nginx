@@ -1,15 +1,16 @@
-/etc/nginx/
-├── nginx.conf
-├── conf.d/
-│   └── default.conf
-├── sites-available/
-│   ├── example.com
-│   └── another-example.com
-├── sites-enabled/
-│   └── example.com -> /etc/nginx/sites-available/example.com
-└── snippets/
-    ├── fastcgi-php.conf
-    └── ssl-params.conf
+##Nginx folder tree:
+#/etc/nginx/
+#├── nginx.conf
+#├── conf.d/
+#│   └── default.conf
+#├── sites-available/
+#│   ├── example.com
+#│   └── another-example.com
+#├── sites-enabled/
+#│   └── example.com -> /etc/nginx/sites-available/example.com
+#└── snippets/
+#    ├── fastcgi-php.conf
+#    └── ssl-params.conf
 
 ---
 
@@ -18,7 +19,7 @@
 #Create a symbolic link from the site-specific configuration file in sites-available to sites-enabled:
 
 #sudo ln -s /etc/nginx/sites-available/example.com /etc/nginx/sites-enabled/
-sudo systemctl reload nginx
+#sudo systemctl reload nginx
 
 server {
     listen 80;  # Listen on port 80 for IPv4 connections.
